@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import useDidMount from "@rooks/use-did-mount";
+import { API, graphqlOperation } from "aws-amplify";
 
-function App() {
+import Layout from "./layout";
+
+import { buildDevoirsCalendar } from "./helpers";
+import * as queries from "./graphql/queries";
+
+const AppWithData = () => {
+  const [articles, setArticles] = useState([]);
+  const [sequencesItem, setSequencesItem] = useState([]);
+  useDidMount(() => {
+    API.graphql(
+      graphqlOperation(queries.getProject, {
+        id: "6ed15a83-fac4-43f2-9b66-31eaa3c51045",
+      })
+    ).then(function (value) {
+      const { data } = value;
+      const { getProject } = data;
+      const { articles, sequences } = getProject;
+      const sequencesItem = sequences.items;
+      const { items } = articles;
+      const filteredItems = items.filter((item) => !item.isDraft);
+      setSequencesItem(sequencesItem);
+      // console.log("Sequnces from query", sequencesItem);
+      setArticles(filteredItems);
+    });
+  });
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {articles && (
+        <Layout
+          daysArticles={buildDevoirsCalendar(articles)}
+          sequences={sequencesItem}
+        />
+      )}
     </div>
   );
-}
+};
 
-export default App;
+export default AppWithData;

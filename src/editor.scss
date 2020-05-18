@@ -1,0 +1,160 @@
+.headlineButtonWrapper {
+  display: inline-block;
+}
+
+.headlineButton {
+  background: #fbfbfb;
+  color: #888;
+  font-size: 18px;
+  border: 0;
+  padding-top: 5px;
+  vertical-align: bottom;
+  height: 34px;
+  width: 36px;
+}
+
+.headlineButton:hover,
+.headlineButton:focus {
+  background: #f3f3f3;
+}
+
+.bluequote {
+  margin: 20px;
+  border-left-width: 5px;
+  border-left-color: #4ca8de;
+  background-color: #e2f2ff;
+  color: #555;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.headerFirst {
+  font-size: 25px;
+  border-bottom: #ddd;
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+// .headerOne {
+//   font-size: 30px;
+//   font-weight: 300;
+//   color: red;
+// }
+
+// .headerTwo {
+//   font-size: 20px;
+//   font-weight: thin;
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+// }
+
+.DraftEditor-editorContainer {
+  position: relative;
+  z-index: 1;
+  // min-height: 400px;
+  // padding: 0px 10px 10px 10px;
+}
+
+.paragraph + .paragraph {
+  margin-top: 40px;
+}
+
+.public-DraftEditor-content figure {
+  margin: 40px 0;
+}
+
+.public-DraftStyleDefault-ul {
+  list-style-type: disc;
+}
+
+.public-DraftStyleDefault-ol {
+  list-style-type: decimal;
+}
+
+.public-DraftStyleDefault-ol,
+.public-DraftStyleDefault-ul {
+  line-height: 2;
+  margin: 24px 0 40px 0;
+  padding-left: 40px;
+}
+
+.public-DraftStyleDefault-ol li,
+.public-DraftStyleDefault-ul li {
+  padding-left: 10px;
+}
+
+.public-DraftEditorPlaceholder-root {
+  color: #999;
+  position: absolute;
+  z-index: 0;
+}
+
+blockquote {
+  margin: 20px;
+  border-left-width: 5px;
+  border-left-color: #4ca8de;
+  background-color: #e2f2ff;
+  color: #555;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  // border-left: 2px solid #ddd;
+  // color: #999;
+  // font-style: italic;
+  // margin: 12px 0 40px 0;
+  // padding: 6px 0 5px 18px;
+}
+
+.paragraph + blockquote {
+  margin-top: 40px;
+}
+
+h1 {
+  font-family: "BarlowSemiCondensed-Bold";
+  font-size: 2rem;
+  letter-spacing: -0.056rem;
+  line-height: 2rem;
+  margin: 24px 0px 24px 0px;
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "BarlowSemiCondensed-SemiBold";
+  color: #cb4345;
+  font-size: 1.5rem;
+  letter-spacing: -0.056rem;
+  line-height: 2rem;
+  margin: 24px 0px 24px 0px;
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+h3 {
+  font-family: "BarlowSemiCondensed-Medium";
+  font-size: 1.2rem;
+  letter-spacing: -0.056rem;
+  line-height: 2rem;
+  margin: 24px 0px 24px 0px;
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+.editor__link {
+  color: #3192e7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.headlineButton {
+  padding: 0px;
+}
