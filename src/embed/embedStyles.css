@@ -1,0 +1,77 @@
+.embedWrapper {
+  position: relative;
+  width: 90%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin: 0 auto;
+}
+
+.embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.iframeContainer {
+  width: 100%;
+  height: -webkit-fill-available;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.img,
+embed,
+iframe,
+object,
+video {
+  height: -webkit-fill-available;
+}
+
+.iframe {
+  width: 100%;
+  height: -webkit-fill-available;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.invalidVideoSrc {
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 1em;
+}
+
+.md-block-atomic-wrapper {
+  position: relative;
+  border: 1px solid #f7f7f7;
+}
+
+.md-block-atomic-embed div div .embedly-card .embedly-card-hug iframe {
+  /* background: rgb(216, 214, 214); */
+  border: 1px solid #7d7d7d;
+  height: 490px;
+}
+
+.md-block-atomic-embed button {
+  background: rgb(216, 214, 214);
+  border: 1px solid #7d7d7d;
+}
+
+.md-block-atomic-wrapper hr {
+  margin-top: 100px;
+  border: none;
+  background: #5a5a5a;
+  min-height: 3px;
+  max-width: 50px;
+}
+.md-RichEditor-editor .md-RichEditor-blockquote {
+  font-family: "Hoefler Text", "Georgia", serif;
+}
+.md-RichEditor-editor .public-DraftStyleDefault-pre {
+  font-family: "Inconsolata", "Menlo", "Consolas", monospace;
+}
+.md-block-atomic-wrapper.md-block-atomic-wrapper-separator {
+  border-color: transparent;
+}

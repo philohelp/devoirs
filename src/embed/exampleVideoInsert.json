@@ -1,0 +1,56 @@
+{
+  "blocks": [
+    {
+      "key": "27nek",
+      "text": "Test embed",
+      "type": "header-first",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    },
+    {
+      "key": "324s1",
+      "text": "Voila, un test.",
+      "type": "content",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    },
+    {
+      "key": "caogc",
+      "text": "Brillant.",
+      "type": "content",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    },
+    {
+      "key": "dkheo",
+      "text": " ",
+      "type": "atomic",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [{ "offset": 0, "length": 1, "key": 0 }],
+      "data": {}
+    },
+    {
+      "key": "468he",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    }
+  ],
+  "entityMap": {
+    "0": {
+      "type": "draft-js-embedly-plugin",
+      "mutability": "IMMUTABLE",
+      "data": { "src": "https://www.youtube.com/watch?v=hB4L2d8gNKU&t=3737s" }
+    }
+  }
+}

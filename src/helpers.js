@@ -6,10 +6,10 @@ import moment from "moment";
 export const getArticlesForDay = (dayStr, daysArticles) => {
   const found = daysArticles.find((item) => item.day === dayStr);
   if (found) {
-    console.log("found daysArticle", found);
+    // console.log("found daysArticle", found);
     return found.articles;
   }
-  console.log("not found", daysArticles);
+  //   console.log("not found", daysArticles);
   return [];
 };
 
@@ -63,6 +63,6 @@ export const getTodayStr = () => {
   const label = moment(now).format("D[ ]MMM[ ]YYYY");
   const sort = moment(now).format("YYMMDD");
   const str = `${sort}//${label}`;
-  console.log(str);
+  //   console.log(str);
   return str;
 };
