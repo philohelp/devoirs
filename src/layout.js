@@ -23,7 +23,11 @@ export default (props) => {
       <Columns>
         <Column isSize={2} style={{ backgroundColor: colors.grisfff }}>
           <div style={{ margin: 10 }}>
-            <DaysList setSelectedDay={setSelectedDay} daysStrs={daysStrs} />
+            <DaysList
+              selectedDay={selectedDay}
+              setSelectedDay={setSelectedDay}
+              daysStrs={daysStrs}
+            />
           </div>
         </Column>
         <Column isSize={8}>
