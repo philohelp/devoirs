@@ -4,6 +4,7 @@ import "./App.css";
 import { S3Image } from "aws-amplify-react";
 
 import MyEditor from "./editor";
+import PdfLink from "./pdf_link";
 import Line from "./line";
 
 import * as colors from "./colors";
@@ -38,6 +39,7 @@ const Day = (props) => {
 
 const DayList = (props) => {
   const { articles, sequence } = props;
+  console.log(articles);
   let filtered = [];
   if (articles) {
     filtered =
@@ -58,6 +60,9 @@ const DayList = (props) => {
             {art.img2 && art.img2 !== "pictos/placeholder" && (
               <S3Image imgKey={art.img2} theme={{ photoImg: styles.img }} />
             )}
+            <div style={{ marginTop: 20 }}>
+              {art.pdfFile && <PdfLink pdf={art.pdfFile} />}
+            </div>
             <Line />
           </div>
         ))}

@@ -15,8 +15,9 @@ export const getArticle = /* GraphQL */ `
       content3
       rawcontent
       img
-      img2
-      img3
+      rightImg
+      topImg
+      btmImg
       link
       expiresAt
       isDraft
@@ -146,8 +147,9 @@ export const listArticles = /* GraphQL */ `
         content3
         rawcontent
         img
-        img2
-        img3
+        rightImg
+        topImg
+        btmImg
         link
         expiresAt
         isDraft
@@ -263,8 +265,9 @@ export const getProfile = /* GraphQL */ `
           content3
           rawcontent
           img
-          img2
-          img3
+          rightImg
+          topImg
+          btmImg
           link
           expiresAt
           isDraft
@@ -392,7 +395,7 @@ export const getProject = /* GraphQL */ `
         }
         nextToken
       }
-      articles(limit: 1000) {
+      articles(limit: 200) {
         items {
           id
           articleType
@@ -405,8 +408,9 @@ export const getProject = /* GraphQL */ `
           content3
           rawcontent
           img
-          img2
-          img3
+          rightImg
+          topImg
+          btmImg
           link
           expiresAt
           isDraft
@@ -520,7 +524,7 @@ export const getSequence = /* GraphQL */ `
           nextToken
         }
       }
-      articles {
+      articles(limit: 200) {
         items {
           id
           articleType
@@ -533,8 +537,9 @@ export const getSequence = /* GraphQL */ `
           content3
           rawcontent
           img
-          img2
-          img3
+          rightImg
+          topImg
+          btmImg
           link
           expiresAt
           isDraft

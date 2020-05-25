@@ -15,8 +15,9 @@ export const createArticle = /* GraphQL */ `
       content3
       rawcontent
       img
-      img2
-      img3
+      rightImg
+      topImg
+      btmImg
       link
       expiresAt
       isDraft
@@ -141,8 +142,9 @@ export const updateArticle = /* GraphQL */ `
       content3
       rawcontent
       img
-      img2
-      img3
+      rightImg
+      topImg
+      btmImg
       link
       expiresAt
       isDraft
@@ -267,8 +269,9 @@ export const deleteArticle = /* GraphQL */ `
       content3
       rawcontent
       img
-      img2
-      img3
+      rightImg
+      topImg
+      btmImg
       link
       expiresAt
       isDraft
@@ -432,8 +435,9 @@ export const createProfile = /* GraphQL */ `
           content3
           rawcontent
           img
-          img2
-          img3
+          rightImg
+          topImg
+          btmImg
           link
           expiresAt
           isDraft
@@ -521,8 +525,9 @@ export const updateProfile = /* GraphQL */ `
           content3
           rawcontent
           img
-          img2
-          img3
+          rightImg
+          topImg
+          btmImg
           link
           expiresAt
           isDraft
@@ -610,8 +615,9 @@ export const deleteProfile = /* GraphQL */ `
           content3
           rawcontent
           img
-          img2
-          img3
+          rightImg
+          topImg
+          btmImg
           link
           expiresAt
           isDraft
@@ -718,8 +724,9 @@ export const createProject = /* GraphQL */ `
           content3
           rawcontent
           img
-          img2
-          img3
+          rightImg
+          topImg
+          btmImg
           link
           expiresAt
           isDraft
@@ -826,8 +833,9 @@ export const updateProject = /* GraphQL */ `
           content3
           rawcontent
           img
-          img2
-          img3
+          rightImg
+          topImg
+          btmImg
           link
           expiresAt
           isDraft
@@ -934,8 +942,9 @@ export const deleteProject = /* GraphQL */ `
           content3
           rawcontent
           img
-          img2
-          img3
+          rightImg
+          topImg
+          btmImg
           link
           expiresAt
           isDraft
@@ -1022,8 +1031,9 @@ export const createSequence = /* GraphQL */ `
           content3
           rawcontent
           img
-          img2
-          img3
+          rightImg
+          topImg
+          btmImg
           link
           expiresAt
           isDraft
@@ -1115,8 +1125,9 @@ export const updateSequence = /* GraphQL */ `
           content3
           rawcontent
           img
-          img2
-          img3
+          rightImg
+          topImg
+          btmImg
           link
           expiresAt
           isDraft
@@ -1208,8 +1219,9 @@ export const deleteSequence = /* GraphQL */ `
           content3
           rawcontent
           img
-          img2
-          img3
+          rightImg
+          topImg
+          btmImg
           link
           expiresAt
           isDraft

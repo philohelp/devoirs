@@ -3,7 +3,9 @@ import * as colors from "./colors";
 
 export default (props) => {
   const { selectedDay, setSelectedDay, daysStrs } = props;
-  const reversedDaysStr = daysStrs.reverse();
+  const sorted = daysStrs.sort();
+  const reversedDaysStr = sorted.reverse();
+  console.log(reversedDaysStr);
   const managedClicked = (item) => {
     console.log(item);
     setSelectedDay(item);
