@@ -9,12 +9,14 @@ export const createArticle = /* GraphQL */ `
       title
       subtitle
       subtitle2
+      subtitle3
       description
       content
       content2
       content3
       rawcontent
       img
+      leftImg
       rightImg
       topImg
       btmImg
@@ -136,12 +138,14 @@ export const updateArticle = /* GraphQL */ `
       title
       subtitle
       subtitle2
+      subtitle3
       description
       content
       content2
       content3
       rawcontent
       img
+      leftImg
       rightImg
       topImg
       btmImg
@@ -263,12 +267,14 @@ export const deleteArticle = /* GraphQL */ `
       title
       subtitle
       subtitle2
+      subtitle3
       description
       content
       content2
       content3
       rawcontent
       img
+      leftImg
       rightImg
       topImg
       btmImg
@@ -429,12 +435,14 @@ export const createProfile = /* GraphQL */ `
           title
           subtitle
           subtitle2
+          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
+          leftImg
           rightImg
           topImg
           btmImg
@@ -519,12 +527,14 @@ export const updateProfile = /* GraphQL */ `
           title
           subtitle
           subtitle2
+          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
+          leftImg
           rightImg
           topImg
           btmImg
@@ -609,12 +619,14 @@ export const deleteProfile = /* GraphQL */ `
           title
           subtitle
           subtitle2
+          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
+          leftImg
           rightImg
           topImg
           btmImg
@@ -718,12 +730,14 @@ export const createProject = /* GraphQL */ `
           title
           subtitle
           subtitle2
+          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
+          leftImg
           rightImg
           topImg
           btmImg
@@ -827,12 +841,14 @@ export const updateProject = /* GraphQL */ `
           title
           subtitle
           subtitle2
+          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
+          leftImg
           rightImg
           topImg
           btmImg
@@ -936,12 +952,14 @@ export const deleteProject = /* GraphQL */ `
           title
           subtitle
           subtitle2
+          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
+          leftImg
           rightImg
           topImg
           btmImg
@@ -1025,12 +1043,14 @@ export const createSequence = /* GraphQL */ `
           title
           subtitle
           subtitle2
+          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
+          leftImg
           rightImg
           topImg
           btmImg
@@ -1119,12 +1139,14 @@ export const updateSequence = /* GraphQL */ `
           title
           subtitle
           subtitle2
+          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
+          leftImg
           rightImg
           topImg
           btmImg
@@ -1213,12 +1235,14 @@ export const deleteSequence = /* GraphQL */ `
           title
           subtitle
           subtitle2
+          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
+          leftImg
           rightImg
           topImg
           btmImg

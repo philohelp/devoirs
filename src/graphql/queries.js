@@ -9,12 +9,14 @@ export const getArticle = /* GraphQL */ `
       title
       subtitle
       subtitle2
+      subtitle3
       description
       content
       content2
       content3
       rawcontent
       img
+      leftImg
       rightImg
       topImg
       btmImg
@@ -141,12 +143,14 @@ export const listArticles = /* GraphQL */ `
         title
         subtitle
         subtitle2
+        subtitle3
         description
         content
         content2
         content3
         rawcontent
         img
+        leftImg
         rightImg
         topImg
         btmImg
@@ -259,12 +263,14 @@ export const getProfile = /* GraphQL */ `
           title
           subtitle
           subtitle2
+          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
+          leftImg
           rightImg
           topImg
           btmImg
@@ -402,12 +408,14 @@ export const getProject = /* GraphQL */ `
           title
           subtitle
           subtitle2
+          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
+          leftImg
           rightImg
           topImg
           btmImg
@@ -531,12 +539,14 @@ export const getSequence = /* GraphQL */ `
           title
           subtitle
           subtitle2
+          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
+          leftImg
           rightImg
           topImg
           btmImg
