@@ -66,12 +66,15 @@ video {
   min-height: 3px;
   max-width: 50px;
 }
+
 .md-RichEditor-editor .md-RichEditor-blockquote {
   font-family: "Hoefler Text", "Georgia", serif;
 }
+
 .md-RichEditor-editor .public-DraftStyleDefault-pre {
   font-family: "Inconsolata", "Menlo", "Consolas", monospace;
 }
+
 .md-block-atomic-wrapper.md-block-atomic-wrapper-separator {
   border-color: transparent;
 }

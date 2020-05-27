@@ -9,14 +9,12 @@ export const onCreateArticle = /* GraphQL */ `
       title
       subtitle
       subtitle2
-      subtitle3
       description
       content
       content2
       content3
       rawcontent
       img
-      leftImg
       rightImg
       topImg
       btmImg
@@ -39,7 +37,6 @@ export const onCreateArticle = /* GraphQL */ `
       locale
       isAClone
       isACloneOf
-      hasClones
       images
       videos
       showSeparator
@@ -52,7 +49,6 @@ export const onCreateArticle = /* GraphQL */ `
         id
         name
         description
-        img
         sequenceId
         projectStr
         projectId
@@ -64,16 +60,11 @@ export const onCreateArticle = /* GraphQL */ `
           logo
           contactMail
           projectId
-          locales
         }
         articles {
           nextToken
         }
-        layout {
-          id
-          title
-          subtitle
-        }
+        layout
       }
       project {
         id
@@ -93,7 +84,6 @@ export const onCreateArticle = /* GraphQL */ `
         }
         contactMail
         projectId
-        locales
         profiles {
           nextToken
         }
@@ -121,7 +111,6 @@ export const onCreateArticle = /* GraphQL */ `
           logo
           contactMail
           projectId
-          locales
         }
         articles {
           nextToken
@@ -138,14 +127,12 @@ export const onUpdateArticle = /* GraphQL */ `
       title
       subtitle
       subtitle2
-      subtitle3
       description
       content
       content2
       content3
       rawcontent
       img
-      leftImg
       rightImg
       topImg
       btmImg
@@ -168,7 +155,6 @@ export const onUpdateArticle = /* GraphQL */ `
       locale
       isAClone
       isACloneOf
-      hasClones
       images
       videos
       showSeparator
@@ -181,7 +167,6 @@ export const onUpdateArticle = /* GraphQL */ `
         id
         name
         description
-        img
         sequenceId
         projectStr
         projectId
@@ -193,16 +178,11 @@ export const onUpdateArticle = /* GraphQL */ `
           logo
           contactMail
           projectId
-          locales
         }
         articles {
           nextToken
         }
-        layout {
-          id
-          title
-          subtitle
-        }
+        layout
       }
       project {
         id
@@ -222,7 +202,6 @@ export const onUpdateArticle = /* GraphQL */ `
         }
         contactMail
         projectId
-        locales
         profiles {
           nextToken
         }
@@ -250,7 +229,6 @@ export const onUpdateArticle = /* GraphQL */ `
           logo
           contactMail
           projectId
-          locales
         }
         articles {
           nextToken
@@ -267,14 +245,12 @@ export const onDeleteArticle = /* GraphQL */ `
       title
       subtitle
       subtitle2
-      subtitle3
       description
       content
       content2
       content3
       rawcontent
       img
-      leftImg
       rightImg
       topImg
       btmImg
@@ -297,7 +273,6 @@ export const onDeleteArticle = /* GraphQL */ `
       locale
       isAClone
       isACloneOf
-      hasClones
       images
       videos
       showSeparator
@@ -310,7 +285,6 @@ export const onDeleteArticle = /* GraphQL */ `
         id
         name
         description
-        img
         sequenceId
         projectStr
         projectId
@@ -322,16 +296,11 @@ export const onDeleteArticle = /* GraphQL */ `
           logo
           contactMail
           projectId
-          locales
         }
         articles {
           nextToken
         }
-        layout {
-          id
-          title
-          subtitle
-        }
+        layout
       }
       project {
         id
@@ -351,7 +320,6 @@ export const onDeleteArticle = /* GraphQL */ `
         }
         contactMail
         projectId
-        locales
         profiles {
           nextToken
         }
@@ -379,7 +347,6 @@ export const onDeleteArticle = /* GraphQL */ `
           logo
           contactMail
           projectId
-          locales
         }
         articles {
           nextToken
@@ -417,7 +384,6 @@ export const onCreateProfile = /* GraphQL */ `
         }
         contactMail
         projectId
-        locales
         profiles {
           nextToken
         }
@@ -435,14 +401,12 @@ export const onCreateProfile = /* GraphQL */ `
           title
           subtitle
           subtitle2
-          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
-          leftImg
           rightImg
           topImg
           btmImg
@@ -465,7 +429,6 @@ export const onCreateProfile = /* GraphQL */ `
           locale
           isAClone
           isACloneOf
-          hasClones
           images
           videos
           showSeparator
@@ -509,7 +472,6 @@ export const onUpdateProfile = /* GraphQL */ `
         }
         contactMail
         projectId
-        locales
         profiles {
           nextToken
         }
@@ -527,14 +489,12 @@ export const onUpdateProfile = /* GraphQL */ `
           title
           subtitle
           subtitle2
-          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
-          leftImg
           rightImg
           topImg
           btmImg
@@ -557,7 +517,6 @@ export const onUpdateProfile = /* GraphQL */ `
           locale
           isAClone
           isACloneOf
-          hasClones
           images
           videos
           showSeparator
@@ -601,7 +560,6 @@ export const onDeleteProfile = /* GraphQL */ `
         }
         contactMail
         projectId
-        locales
         profiles {
           nextToken
         }
@@ -619,14 +577,12 @@ export const onDeleteProfile = /* GraphQL */ `
           title
           subtitle
           subtitle2
-          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
-          leftImg
           rightImg
           topImg
           btmImg
@@ -649,7 +605,6 @@ export const onDeleteProfile = /* GraphQL */ `
           locale
           isAClone
           isACloneOf
-          hasClones
           images
           videos
           showSeparator
@@ -689,7 +644,6 @@ export const onCreateProject = /* GraphQL */ `
           logo
           contactMail
           projectId
-          locales
         }
         articles {
           nextToken
@@ -697,7 +651,6 @@ export const onCreateProject = /* GraphQL */ `
       }
       contactMail
       projectId
-      locales
       profiles {
         items {
           id
@@ -716,10 +669,10 @@ export const onCreateProject = /* GraphQL */ `
           id
           name
           description
-          img
           sequenceId
           projectStr
           projectId
+          layout
         }
         nextToken
       }
@@ -730,14 +683,12 @@ export const onCreateProject = /* GraphQL */ `
           title
           subtitle
           subtitle2
-          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
-          leftImg
           rightImg
           topImg
           btmImg
@@ -760,7 +711,6 @@ export const onCreateProject = /* GraphQL */ `
           locale
           isAClone
           isACloneOf
-          hasClones
           images
           videos
           showSeparator
@@ -800,7 +750,6 @@ export const onUpdateProject = /* GraphQL */ `
           logo
           contactMail
           projectId
-          locales
         }
         articles {
           nextToken
@@ -808,7 +757,6 @@ export const onUpdateProject = /* GraphQL */ `
       }
       contactMail
       projectId
-      locales
       profiles {
         items {
           id
@@ -827,10 +775,10 @@ export const onUpdateProject = /* GraphQL */ `
           id
           name
           description
-          img
           sequenceId
           projectStr
           projectId
+          layout
         }
         nextToken
       }
@@ -841,14 +789,12 @@ export const onUpdateProject = /* GraphQL */ `
           title
           subtitle
           subtitle2
-          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
-          leftImg
           rightImg
           topImg
           btmImg
@@ -871,7 +817,6 @@ export const onUpdateProject = /* GraphQL */ `
           locale
           isAClone
           isACloneOf
-          hasClones
           images
           videos
           showSeparator
@@ -911,7 +856,6 @@ export const onDeleteProject = /* GraphQL */ `
           logo
           contactMail
           projectId
-          locales
         }
         articles {
           nextToken
@@ -919,7 +863,6 @@ export const onDeleteProject = /* GraphQL */ `
       }
       contactMail
       projectId
-      locales
       profiles {
         items {
           id
@@ -938,10 +881,10 @@ export const onDeleteProject = /* GraphQL */ `
           id
           name
           description
-          img
           sequenceId
           projectStr
           projectId
+          layout
         }
         nextToken
       }
@@ -952,14 +895,12 @@ export const onDeleteProject = /* GraphQL */ `
           title
           subtitle
           subtitle2
-          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
-          leftImg
           rightImg
           topImg
           btmImg
@@ -982,7 +923,6 @@ export const onDeleteProject = /* GraphQL */ `
           locale
           isAClone
           isACloneOf
-          hasClones
           images
           videos
           showSeparator
@@ -1003,7 +943,6 @@ export const onCreateSequence = /* GraphQL */ `
       id
       name
       description
-      img
       sequenceId
       projectStr
       projectId
@@ -1025,7 +964,6 @@ export const onCreateSequence = /* GraphQL */ `
         }
         contactMail
         projectId
-        locales
         profiles {
           nextToken
         }
@@ -1043,14 +981,12 @@ export const onCreateSequence = /* GraphQL */ `
           title
           subtitle
           subtitle2
-          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
-          leftImg
           rightImg
           topImg
           btmImg
@@ -1073,7 +1009,6 @@ export const onCreateSequence = /* GraphQL */ `
           locale
           isAClone
           isACloneOf
-          hasClones
           images
           videos
           showSeparator
@@ -1085,11 +1020,7 @@ export const onCreateSequence = /* GraphQL */ `
         }
         nextToken
       }
-      layout {
-        id
-        title
-        subtitle
-      }
+      layout
     }
   }
 `;
@@ -1099,7 +1030,6 @@ export const onUpdateSequence = /* GraphQL */ `
       id
       name
       description
-      img
       sequenceId
       projectStr
       projectId
@@ -1121,7 +1051,6 @@ export const onUpdateSequence = /* GraphQL */ `
         }
         contactMail
         projectId
-        locales
         profiles {
           nextToken
         }
@@ -1139,14 +1068,12 @@ export const onUpdateSequence = /* GraphQL */ `
           title
           subtitle
           subtitle2
-          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
-          leftImg
           rightImg
           topImg
           btmImg
@@ -1169,7 +1096,6 @@ export const onUpdateSequence = /* GraphQL */ `
           locale
           isAClone
           isACloneOf
-          hasClones
           images
           videos
           showSeparator
@@ -1181,11 +1107,7 @@ export const onUpdateSequence = /* GraphQL */ `
         }
         nextToken
       }
-      layout {
-        id
-        title
-        subtitle
-      }
+      layout
     }
   }
 `;
@@ -1195,7 +1117,6 @@ export const onDeleteSequence = /* GraphQL */ `
       id
       name
       description
-      img
       sequenceId
       projectStr
       projectId
@@ -1217,7 +1138,6 @@ export const onDeleteSequence = /* GraphQL */ `
         }
         contactMail
         projectId
-        locales
         profiles {
           nextToken
         }
@@ -1235,14 +1155,12 @@ export const onDeleteSequence = /* GraphQL */ `
           title
           subtitle
           subtitle2
-          subtitle3
           description
           content
           content2
           content3
           rawcontent
           img
-          leftImg
           rightImg
           topImg
           btmImg
@@ -1265,7 +1183,6 @@ export const onDeleteSequence = /* GraphQL */ `
           locale
           isAClone
           isACloneOf
-          hasClones
           images
           videos
           showSeparator
@@ -1277,11 +1194,7 @@ export const onDeleteSequence = /* GraphQL */ `
         }
         nextToken
       }
-      layout {
-        id
-        title
-        subtitle
-      }
+      layout
     }
   }
 `;
