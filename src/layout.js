@@ -17,7 +17,7 @@ export default (props) => {
     <div>
       <Box>
         <div style={{ marginTop: 20, marginBottom: 20 }}>
-          <p style={styles.header}>Devoirs de la classe de CM2 de M. Stella</p>
+          <p style={styles.header}>Devoirs de la classe de CM2</p>
         </div>
       </Box>
       <Columns>

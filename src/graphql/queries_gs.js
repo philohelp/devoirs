@@ -7,7 +7,6 @@ export const getSequence = /* GraphQL */ `
       id
       name
       description
-      img
       image {
         id
         type
@@ -82,11 +81,6 @@ export const getSequence = /* GraphQL */ `
           content2
           content3
           rawcontent
-          img
-          leftImg
-          rightImg
-          topImg
-          btmImg
           image {
             id
             type
@@ -185,7 +179,6 @@ export const getSequence = /* GraphQL */ `
           isAClone
           isACloneOf
           hasClones
-          imgs
           images {
             id
             type

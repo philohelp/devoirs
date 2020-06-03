@@ -42,7 +42,6 @@ const PdfLink = (props) => {
 
 export default (props) => {
   const { pdf } = props;
-  console.log(props);
   const [url, setUrl] = useState(null);
 
   useDidMount(function () {
@@ -50,7 +49,6 @@ export default (props) => {
   });
 
   const manageUrl = (res) => {
-    console.log(res);
     setUrl(res);
   };
   return (

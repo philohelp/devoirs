@@ -98,11 +98,71 @@ export const getProject = /* GraphQL */ `
           content2
           content3
           rawcontent
-          img
-          leftImg
-          rightImg
-          topImg
-          btmImg
+          image {
+            id
+            type
+            name
+            description
+            zoomable
+            src
+            thumbnailSrc
+            w
+            h
+            size
+            weUseIt
+          }
+          topImage {
+            id
+            type
+            name
+            description
+            zoomable
+            src
+            thumbnailSrc
+            w
+            h
+            size
+            weUseIt
+          }
+          btmImage {
+            id
+            type
+            name
+            description
+            zoomable
+            src
+            thumbnailSrc
+            w
+            h
+            size
+            weUseIt
+          }
+          leftImage {
+            id
+            type
+            name
+            description
+            zoomable
+            src
+            thumbnailSrc
+            w
+            h
+            size
+            weUseIt
+          }
+          rightImage {
+            id
+            type
+            name
+            description
+            zoomable
+            src
+            thumbnailSrc
+            w
+            h
+            size
+            weUseIt
+          }
           link
           expiresAt
           isDraft

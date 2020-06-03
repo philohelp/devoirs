@@ -1,8 +1,8 @@
 import React from "react";
-import "./App.css";
 
-import { S3Image } from "aws-amplify-react";
+import { Columns, Column } from "bloomer";
 
+import DisplayFile from "./display_file";
 import MyEditor from "./editor";
 import PdfLink from "./pdf_link";
 import Line from "./line";
@@ -15,22 +15,7 @@ const Day = (props) => {
     <div>
       {sequences.map((seq) => (
         <div key={seq.id}>
-          <div
-            style={{
-              height: 40,
-              width: "100%",
-              color: "white",
-              backgroundColor: colors.bleudoux,
-              padding: 8,
-              marginTop: 10,
-              marginBottom: 10,
-            }}
-          >
-            <p style={styles.seq}>{seq.name.toUpperCase()}</p>
-          </div>
-          <div style={{ margin: 10 }}>
-            {articles && <DayList articles={articles} sequence={seq.name} />}
-          </div>
+          {articles && <DayList articles={articles} sequence={seq} />}
         </div>
       ))}
     </div>
@@ -43,29 +28,80 @@ const DayList = (props) => {
   let filtered = [];
   if (articles) {
     filtered =
-      articles && articles.filter((art) => art.sequenceStr === sequence);
+      articles && articles.filter((art) => art.sequenceStr === sequence.name);
+  }
+  if (!filtered || filtered.length === 0) {
+    return null;
   }
   return (
-    <div style={{ marginBottom: 40 }}>
-      {filtered &&
-        filtered.map((art) => (
-          <div key={art.id}>
-            <div style={styles.title}>{art.title}</div>
-            {art.img !== "pictos/placeholder" && (
-              <S3Image imgKey={art.img} theme={{ photoImg: styles.img }} />
-            )}
-            <div>
-              <MyEditor content={art.content} />
+    <div style={{ margin: 10 }}>
+      <div
+        style={{
+          height: 40,
+          width: "100%",
+          color: "white",
+          backgroundColor: colors.bleudoux,
+          padding: 8,
+          marginTop: 10,
+          marginBottom: 10,
+        }}
+      >
+        <p style={styles.seq}>
+          {sequence && sequence.name && sequence.name.toUpperCase()}
+        </p>
+      </div>
+      <div style={{ marginBottom: 40 }}>
+        {filtered &&
+          filtered.map((art) => (
+            <div key={art.id}>
+              <div style={styles.title}>{art.title}</div>
+              {art.topImage &&
+                art.topImage.id !== "d68a4810-bf73-4ee6-80d5-5df513b186f1" && (
+                  <DisplayFile image={art.topImage} styles={styles.img} />
+                )}
+              <div style={{ marginTop: 10 }}>
+                {art.image &&
+                  art.image.id !== "d68a4810-bf73-4ee6-80d5-5df513b186f1" && (
+                    <Columns>
+                      <Column isSize={7}>
+                        <div>
+                          <MyEditor content={art.content} />
+                        </div>
+                      </Column>
+                      <Column isSize={5}>
+                        <div style={{ marginTop: 10 }}>
+                          {art.image &&
+                            art.image.id !==
+                              "d68a4810-bf73-4ee6-80d5-5df513b186f1" && (
+                              <DisplayFile
+                                image={art.image}
+                                styles={styles.img}
+                              />
+                            )}
+                        </div>
+                      </Column>
+                    </Columns>
+                  )}
+              </div>
+              <div style={{ marginTop: 10 }}>
+                {(!art.image ||
+                  art.image.id === "d68a4810-bf73-4ee6-80d5-5df513b186f1") && (
+                  <div>
+                    <MyEditor content={art.content} />
+                  </div>
+                )}
+              </div>
+              {art.btmImage &&
+                art.btmImage.id !== "d68a4810-bf73-4ee6-80d5-5df513b186f1" && (
+                  <DisplayFile image={art.btmImage} styles={styles.img} />
+                )}
+              <div style={{ marginTop: 20 }}>
+                {art.pdfFile && <PdfLink pdf={art.pdfFile} />}
+              </div>
+              <Line />
             </div>
-            {art.img2 && art.img2 !== "pictos/placeholder" && (
-              <S3Image imgKey={art.img2} theme={{ photoImg: styles.img }} />
-            )}
-            <div style={{ marginTop: 20 }}>
-              {art.pdfFile && <PdfLink pdf={art.pdfFile} />}
-            </div>
-            <Line />
-          </div>
-        ))}
+          ))}
+      </div>
     </div>
   );
 };
@@ -81,7 +117,7 @@ const styles = {
   title: {
     fontSize: 18,
     color: colors.bleunoir,
-    fontFamily: "BarlowSemiCondensed-SemiBold",
+    fontFamily: "BarlowSemiCondensed-Bold",
   },
   desc: {
     fontSize: 13,

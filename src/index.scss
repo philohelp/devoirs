@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -75,26 +75,85 @@ code {
   src: url("./assets/fonts/BarlowSemiCondensed-Thin.otf");
 }
 
-// body {
-//   margin: 0;
-//   font-size: 14px;
-//   font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-//     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-//     sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
-
-// .react-hint {
-//   font-family: "Barlow Semi Condensed";
-//   font-size: 13px;
-// }
-
-// .dropzone {
-//   cursor: pointer;
-// }
-
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,800");
+
+.zoomable-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.zoomable-image {
+  opacity: 1;
+  display: block;
+  width: 200%;
+  height: auto;
+  transition: 0.5s ease;
+  /* backface-visibility: hidden; */
+}
+
+.zoomable-visible {
+  transition: 0.5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.zoomable-visible-icon {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 38px;
+}
+
+.zoomable-revealed {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  -ms-transform: translate(-40%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+
+.zoomable-container:hover .zoomable-image {
+  opacity: 0.5;
+}
+
+.zoomable-container:hover .zoomable-revealed {
+  opacity: 1;
+}
+
+.zoomable-container:hover .zoomable-dark {
+  opacity: 1;
+}
+
+.zoomable-container:hover .zoomable-visible-icon {
+  opacity: 0;
+}
+
+.zoomable-revealed-icon {
+  color: rgba(0, 0, 0, 0.7);
+
+  font-size: 36px;
+}
+
+.zoomable-dark {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: "100%";
+  width: "100%";
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 html,
 body {
@@ -295,7 +354,6 @@ textarea {
 }
 
 @keyframes glow {
-
   0%,
   100% {
     opacity: 1;
@@ -474,7 +532,7 @@ input:-webkit-autofill {
   visibility: hidden;
 }
 
-.checkbox input[type="checkbox"]+span:before {
+.checkbox input[type="checkbox"] + span:before {
   position: absolute;
   top: 50%;
   right: auto;
@@ -489,7 +547,7 @@ input:-webkit-autofill {
   display: block;
 }
 
-.checkbox input[type="checkbox"]:checked+span:before {
+.checkbox input[type="checkbox"]:checked + span:before {
   font-size: 16px;
   line-height: 24px;
   box-shadow: none;
@@ -530,8 +588,8 @@ input:-webkit-autofill {
   width: 100%;
 }
 
-.input-symbol input:focus+[class^="icon-"],
-.input-symbol input:focus+[class*=" icon-"] {
+.input-symbol input:focus + [class^="icon-"],
+.input-symbol input:focus + [class*=" icon-"] {
   color: #2cc5d2;
 }
 
@@ -1198,7 +1256,7 @@ a:focus {
   cursor: pointer;
 }
 
-.list-item+.list-item {
+.list-item + .list-item {
   border-top: 1px solid #f0f9fb;
 }
 
@@ -1236,7 +1294,7 @@ a:focus {
   height: 12px;
 }
 
-.loading-item+.loading-item {
+.loading-item + .loading-item {
   border-top: 1px solid #f0f9fb;
 }
 
