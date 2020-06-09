@@ -14,6 +14,7 @@ export const getSequence = /* GraphQL */ `
         description
         zoomable
         src
+        path
         thumbnailSrc
         w
         h
@@ -36,6 +37,7 @@ export const getSequence = /* GraphQL */ `
           description
           zoomable
           src
+          path
           thumbnailSrc
           w
           h
@@ -88,6 +90,7 @@ export const getSequence = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -101,6 +104,7 @@ export const getSequence = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -114,6 +118,7 @@ export const getSequence = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -127,6 +132,7 @@ export const getSequence = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -140,6 +146,7 @@ export const getSequence = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -169,6 +176,7 @@ export const getSequence = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -186,6 +194,7 @@ export const getSequence = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h

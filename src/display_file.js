@@ -25,6 +25,7 @@ export default (props) => {
   } else {
     myPath = src;
   }
+  console.log("myPath", myPath);
   const url = `https://suncms.imgix.net/${myPath}`;
   return (
     <div>

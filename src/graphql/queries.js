@@ -15,6 +15,7 @@ export const getProject = /* GraphQL */ `
         description
         zoomable
         src
+        path
         thumbnailSrc
         w
         h
@@ -32,6 +33,7 @@ export const getProject = /* GraphQL */ `
           description
           zoomable
           src
+          path
           thumbnailSrc
           w
           h
@@ -105,6 +107,7 @@ export const getProject = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -118,6 +121,7 @@ export const getProject = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -131,6 +135,7 @@ export const getProject = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -144,6 +149,7 @@ export const getProject = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -157,6 +163,7 @@ export const getProject = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -202,6 +209,7 @@ export const getProject = /* GraphQL */ `
           description
           zoomable
           src
+          path
           thumbnailSrc
           w
           h
@@ -326,6 +334,7 @@ export const getProjectArticles = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -339,6 +348,7 @@ export const getProjectArticles = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -352,6 +362,7 @@ export const getProjectArticles = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -365,6 +376,7 @@ export const getProjectArticles = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -378,6 +390,7 @@ export const getProjectArticles = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -407,6 +420,7 @@ export const getProjectArticles = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
@@ -425,6 +439,7 @@ export const getProjectArticles = /* GraphQL */ `
             description
             zoomable
             src
+            path
             thumbnailSrc
             w
             h
