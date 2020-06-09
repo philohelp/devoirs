@@ -18,8 +18,14 @@ export default (props) => {
   if (!image) {
     return null;
   }
-  const { src, name } = image;
-  const url = `https://suncms.imgix.net/${src}`;
+  const { src, path, name } = image;
+  let myPath;
+  if (path) {
+    myPath = path;
+  } else {
+    myPath = src;
+  }
+  const url = `https://suncms.imgix.net/${myPath}`;
   return (
     <div>
       <div
